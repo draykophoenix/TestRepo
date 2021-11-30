@@ -1,7 +1,10 @@
 #include <stdio.h>
 
 int main(void) {
-    printf("Okay, this is epic");
+
+    int bits[] = {0b01001111, 0b01101011, 0b01100001, 0b01111001, 0b00101100, 0b00100000, 0b01110100, 0b01101000, 0b01101001, 0b01110011, 0b00100000, 0b01101001, 0b01110011, 0b00100000, 0b01100101, 0b01110000, 0b01101001, 0b01100011};
+    
+    for (int i = 0; i < (sizeof bits / sizeof *bits); i++) {
+        printf("%c", bits[i]);
+    }
 }
-
-
